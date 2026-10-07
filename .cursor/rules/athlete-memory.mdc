@@ -1,0 +1,17 @@
+---
+description: Load Gabriel's triathlon / Garmin training memory before advising on sessions
+alwaysApply: true
+---
+
+# Athlete memory
+
+Before recommending swim / bike / run sessions, taper, or race-week changes, read `memory/athlete-context.md`.
+
+That file is the working memory for:
+
+- IRONMAN 70.3 Florianópolis on 2026-10-18
+- Locked swim slots and Thursday physiotherapy
+- This week's scheduled workouts and decisions already made
+- The 2026-10-06 pool swim (intended vs actual)
+
+Do not store Garmin passwords or OAuth tokens in the repo. Use saved tokens via `garmin-mcp-auth --verify` or `~/.garminconnect`.
