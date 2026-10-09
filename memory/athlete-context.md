@@ -61,8 +61,8 @@ Scheduled on Garmin (coach morning work). Do not invent extra quality.
 
 - Do **not** squeeze a Wednesday swim. Tuesday night already covered water feel; Wednesday is the threshold bike.
 - Do **not** put the 1,900 m on Thursday night (therapy) or Wednesday 06:30 (still recovering + Limiar).
-- Friday 06:30 is the 1,900 m wetsuit slot. Treat it as 70.3 rehearsal, not a time trial.
-- Next full open-water touch is Saturday 17 Oct at the sea. No second 1,900 m in race week.
+- Friday 9 Oct: easy pool 2,000 m (HR 112) instead of a hard 1,900. Open-water wetsuit rehearsal is now the **Saturday 17 Oct** sea splash.
+- Next open-water touch: Saturday 17 Oct at the sea. No second full 1,900 in race week.
 
 ## Tue 6 Oct pool swim (activity `24633265308`)
 
