@@ -41,7 +41,8 @@ Do not invent products that are not listed here. Prefer Brazil-market items in t
 ### Bike
 
 - We-On jelly allowed and preferred in the first 60–90 min.
-- Carry **2× 750 ml** bottles with Liquidz or GU tabs, salt-fortified.
+- Carry bottles with Liquidz or GU tabs, **regular table salt** to hit sodium. Do not swap in light salt cup-for-cup.
+- Light salt is optional extra K on hot / long days. Tomorrow-style 90 min cool starts: skip it.
 - Eat/drink every **20–25 min**, 50–60 g carbs/h.
 
 ### Run
