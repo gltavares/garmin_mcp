@@ -24,7 +24,8 @@ Do not invent products that are not listed here. Prefer Brazil-market items in t
 | We-On Energy Jelly / jelly beans | ~21 g | ~60 mg | | Bike only, first 60–90 min. Texture / GI relief. **Never on the run.** |
 | Liquidz isotonic sachet 5 g | 0.6 g | 317 mg | 205 mg K, 64 mg Mg | Bike bottles. Standard: **2 sachets / 750 ml = 634 mg Na** |
 | GU Hydration Tabs | 1–2 g | ~320 mg | | Alt bottle: 2 tabs / 500–750 ml |
-| Table salt | 0 | ~300–600 mg per 1/8–1/4 tsp | | Fortify bottles to hit 1,200–1,500 mg/L |
+| Table salt (regular) | 0 | ~300 mg per 1/8 tsp; ~600 mg per 1/4 tsp | | **Primary bottle fortifier.** Hits 1,200–1,500 mg Na/h. |
+| Light salt (e.g. Cisne Light: 50% KCl) | 0 | ~191 mg Na + 267 mg K per 1 g (¼ tsp rasa); ~95 mg Na + 133 mg K per ⅛ tsp | | Extra potassium only. **Does not replace table salt 1:1.** Liquidz already supplies 205 mg K/sachet. |
 | Salt caps (Z2 / Atlhetica / Roctane) | 0 | ~200–250 mg | | Run backup if not using 25 PRO Hidra |
 
 ## 3. Timing & leg rules
