@@ -1,6 +1,6 @@
 # IRONMAN 70.3 Florianópolis — race-day nutrition + shoes
 
-Last updated: 2026-10-14.  
+Last updated: 2026-10-15.  
 Clock: **5:20** overall (Garmin event / agreed planning time). Do not rebuild a new predictor.  
 Fueling uses only `memory/nutrition-playbook.md`. Course Liquidz / water / soda are on-course, not new products.
 
@@ -60,13 +60,13 @@ Start bottles stay **750 + 500 ml** (1.25 L). Cool day + five bike aids. Do **no
 
 Skip **light salt**. Cool day; Liquidz already has K.
 
-**Bento / jersey (bike):** 3× We-On, 4× 25 PRO Hidra, 1 spare Liquidz sachet, 2 paper twists of ⅛ tsp table salt (only if a Hidra is missed).
+**Bento / jersey (bike):** 3× We-On, 3× 25 PRO Hidra, **1× 25 PRO Energy** (150 mg caffeine), 1 spare Liquidz sachet, 2 paper twists of ⅛ tsp table salt (only if a Hidra is missed).
 
 **T2 / run belt:** 4× 25 PRO Hidra, 1× Carb Up traditional (spare), 2 salt caps.
 
-**Morning bag:** 1× 25 PRO Hidra (T−15), half-scoop Dux, 500 ml + 2 Liquidz (preload), white bread + Nutella or doce de leite. **Skip creatine** race morning. **No Carb Up Black** — Dux is the caffeine.
+**Morning bag:** 1× 25 PRO Hidra (T−15), half-scoop Dux, 500 ml + 2 Liquidz (preload), white bread + Nutella or doce de leite. **Skip creatine** race morning. **No Carb Up Black.** Caffeine is Dux + the one Energy.
 
-**Pack count:** 9 Hidra, 3 We-On, 2 Carb Up, 4 Liquidz sachets (3 in bottles + 1 spare), 2 salt caps, Dux half-scoop.
+**Pack count:** 8 Hidra, **1 Energy**, 3 We-On, 2 Carb Up, 4 Liquidz sachets (3 in bottles + 1 spare), 2 salt caps, Dux half-scoop.
 
 Course bike (every aid): water (white), Liquidz (green), banana. Skip banana.  
 Course run (every ~2.5 km): water, Liquidz, soda. Specials: P1 banana, P2/P4 Paçoquita, P3 Gel Dux. **Skip solids and course Dux gel** (unknown caffeine on top of your Dux).
@@ -83,7 +83,7 @@ Times are **leg time**. Clock column assumes 06:05 start.
 |---|---|---|---|---:|---:|---|
 | 03:05 | T−3h | Breakfast | White bread + Nutella or doce de leite + water | meal | — | Fast carbs, low fiber/fat. No whole wheat. |
 | 04:35 | T−90 | Preload | 500 ml water + **2 Liquidz** | ~1 g | 634 | Sip; don’t chug. Toilet after this. |
-| 05:10 | T−55 | Caffeine | Half-scoop **Dux** (~75–100 mg) + a little water | 0 | 0 | This is the only caffeine. No Black gels later. |
+| 05:10 | T−55 | Caffeine | Half-scoop **Dux** (~75–100 mg) + a little water | 0 | 0 | First caffeine. Second is the Energy at bike 2:00. No Black, no course Dux gel. |
 | 05:50 | T−15 | Last gel | **1× 25 PRO Hidra** + 150 ml water | 25 | 295 | Then nothing until bike 0:20. |
 | 06:05 | 0:00 | Swim start | — | 0 | 0 | Cap on, seed 36–40. Don’t drink in the water. |
 
@@ -107,8 +107,8 @@ Times are **leg time**. Clock column assumes 06:05 start.
 | 08:14 | 1:26 | **P3 km 48.6** | Refill. Prefer Liquidz in the 750 | 0 | course | You are ~halfway. |
 | 08:28 | 1:40 | ~km 56 | **1× 25 PRO Hidra** + drink | 25 | 295 | |
 | 08:45 | 1:57 | **P4 km 65.8** | Water + Liquidz as needed | 0 | course | |
-| 08:48 | 2:00 | ~km 68 | **1× 25 PRO Hidra** + drink | 25 | 295 | |
-| 09:08 | 2:20 | ~km 75 | **1× 25 PRO Hidra** + drink | 25 | 295 | Last bike gel. |
+| 08:48 | 2:00 | ~km 68 | **1× 25 PRO Energy** + drink | 25 | 214 | **150 mg caffeine.** Peaks in T2 / first run km. Mark this pouch. |
+| 09:08 | 2:20 | ~km 75 | **1× 25 PRO Hidra** + drink | 25 | 295 | Last bike gel. Plain Hidra — caffeine already taken. |
 | 09:11 | 2:23 | **P2 km 80.6** | Small Liquidz/water if thirsty | 0 | course | Intermediate cut is 11:08 — you are ~2 h early. |
 | 09:28 | 2:40 | T2 in | empty or leave bottles | 0 | 0 | Soft-pedal last 2 km. No new gel. |
 
@@ -140,7 +140,7 @@ Targets: **60 g CHO/h**, bike **~1.0 L/h**, run **0.5–0.75 L/h**, Na **1,200�
 | Block | Duration | CHO | CHO/h | Fluid | Fluid/h | Na (approx) | Na/h |
 |---|---|---:|---:|---:|---:|---:|---:|
 | Pre (T−15 gel + preload) | — | 26 g | — | 0.65 L | — | ~930 | preload |
-| **Bike** | 2:40 | **163 g** (3 We-On + 4 Hidra) | **61** | **~2.7 L** | **~1.0 L** | ~1,300–1,500 /h | on target if start bottles then course Liquidz |
+| **Bike** | 2:40 | **163 g** (3 We-On + 3 Hidra + 1 Energy) | **61** | **~2.7 L** | **~1.0 L** | ~1,300–1,500 /h | on target if start bottles then course Liquidz |
 | **Run** | 1:53 | **100 g** (4 Hidra) | **53** | **~1.0–1.1 L** | **~0.55 L** | gels 627/h + Liquidz + T2 salt cap | on target |
 | Bike + run | 4:33 | 263 g | 58 | ~3.7 L | — | — | — |
 

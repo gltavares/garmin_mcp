@@ -1,6 +1,6 @@
 # Athlete context (Gabriel)
 
-Last updated: 2026-10-14. Source: Garmin Connect + conversation.  
+Last updated: 2026-10-15. Source: Garmin Connect + conversation.  
 Do **not** store Garmin passwords or OAuth tokens in this repo. Tokens live in `~/.garminconnect` on the machine that ran `garmin-mcp-auth`.
 
 Fueling rules live in `memory/nutrition-playbook.md`. Use that playbook for every session/race fueling plan.  
