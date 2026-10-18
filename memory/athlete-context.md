@@ -1,6 +1,6 @@
 # Athlete context (Gabriel)
 
-Last updated: 2026-10-15. Source: Garmin Connect + conversation.  
+Last updated: 2026-10-18. Source: Garmin Connect + conversation + UNPACE live result.  
 Do **not** store Garmin passwords or OAuth tokens in this repo. Tokens live in `~/.garminconnect` on the machine that ran `garmin-mcp-auth`.
 
 Fueling rules live in `memory/nutrition-playbook.md`. Use that playbook for every session/race fueling plan.  
@@ -16,7 +16,7 @@ Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa
 - Typical swim: 25 m pool, evening ~19:00, ~2.0–2.5 km, avg HR ~139, SWOLF ~37, ~9.5 strokes / 25 m
 - Home equipment: turbo trainer and treadmill, so bike/run can move to night
 - Weight (Garmin): 68.7 kg (2026-09-15)
-- 70.3 planning clock: **5:20** (Garmin overall / agreed event time; band 5:15–5:30). Do not rebuild a new predictor. Fresh half prediction 1:40:05 is **not** the off-bike run.
+- 70.3 planning clock was **5:20**. **Race result 2026-10-18: 5:45:44** (swim 58:33 · bike 2:49:10 · run 1:50:59 · T 7:02). Unofficial tracker. Full debrief: `memory/race-floripa-2026-result.md`.
 
 ## Goal race
 
