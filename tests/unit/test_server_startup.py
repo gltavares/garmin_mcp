@@ -38,6 +38,7 @@ def test_main_registers_tools_and_starts_stdio(monkeypatch):
     assert run_calls[0]["tool_count"] >= 10
     assert "get_devices" in run_calls[0]["tool_names"]
     assert "get_workouts" in run_calls[0]["tool_names"]
+    assert "get_intervals_athlete" in run_calls[0]["tool_names"]
 
 
 def test_main_rejects_malformed_allowlist_before_garmin_initialization(

@@ -1,7 +1,7 @@
 # Athlete context (Gabriel)
 
-Last updated: 2026-10-18. Source: Garmin Connect + conversation + UNPACE live result.  
-Do **not** store Garmin passwords or OAuth tokens in this repo. Tokens live in `~/.garminconnect` on the machine that ran `garmin-mcp-auth`.
+Last updated: 2026-10-18. Source: Garmin Connect + Intervals.icu account + conversation + UNPACE live result.  
+Do **not** store Garmin passwords, Garmin OAuth tokens, or Intervals.icu API keys in this repo. Garmin tokens live in `~/.garminconnect`. The Intervals key lives in `~/.intervalsicu` after `intervals-icu-auth`.
 
 Fueling rules live in `memory/nutrition-playbook.md`. Use that playbook for every session/race fueling plan.  
 Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa-2026.md`.
@@ -133,3 +133,12 @@ Also active on Garmin (not shoes): bikes Caloi Elite, BMC SL03 “Lemon Pepper�
 Tokens are already saved for this environment after `garmin-mcp-auth`. Re-verify with `garmin-mcp-auth --verify`. Never commit `~/.garminconnect` or credentials.
 
 Useful Garmin MCP reads: `get_calendar_events`, `get_scheduled_workouts`, `get_training_readiness`, `get_recovery_time_remaining`, `get_training_status`, `get_activities`, `get_activity`, `get_activity_splits`, `get_hrv_data`, `get_sleep_data`.
+
+### Intervals.icu
+
+- Account: **gltavares** / athlete id **`i172982`** (from 2023 signup mail). Path id **`0`** also works once a key is present.
+- Personal API (forum topic 609): HTTP Basic username literally **`API_KEY`**, password = key from https://intervals.icu/settings → Developer Settings. Browser User-Agent required (Cloudflare).
+- Local key file: `~/.intervalsicu/api_key` via `intervals-icu-auth` / `intervals-icu-auth --verify`. Env: `INTERVALS_ICU_API_KEY`.
+- Tools: `get_intervals_status`, `get_intervals_athlete`, `get_intervals_activities`, `get_intervals_activity`, `get_intervals_wellness`, `get_intervals_events`, `get_intervals_sport_settings`.
+- Strava-sourced fields are not available through this API. Garmin data via Intervals may be restricted after the Oct 2026 T&C note.
+- Confirmed from Intervals mail (no API yet): FTP **207 W** after Confins 55 km (10 Oct 2026).

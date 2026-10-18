@@ -393,6 +393,17 @@ GARMIN_EMAIL=your@email.com GARMIN_PASSWORD=secret garmin-mcp-auth
 
 If you don't have MFA enabled you can also skip `garmin-mcp-auth` and pass `GARMIN_EMAIL` and `GARMIN_PASSWORD` as env variables directly to your MCP client, if supported. For better security, prefer the pre-authentication flow above and keep credentials out of MCP client configuration.
 
+#### Intervals.icu (optional)
+
+The same server can read Intervals.icu once a personal API key is saved. Generate the key at [Settings → Developer Settings](https://intervals.icu/settings). Auth is HTTP Basic with username `API_KEY` and that key as the password. Cloudflare requires a browser User-Agent; the client sets one.
+
+```bash
+INTERVALS_ICU_API_KEY=your_key uv run intervals-icu-auth
+uv run intervals-icu-auth --verify
+```
+
+The key is stored in `~/.intervalsicu/api_key` (mode 0600). Do not commit it. Athlete id `0` follows the key; Gabriel's account is `i172982`.
+
 #### Step 2: Configure Claude Desktop
 
 Add to your Claude Desktop MCP settings **WITHOUT** credentials:

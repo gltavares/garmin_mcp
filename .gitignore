@@ -12,6 +12,7 @@ build/
 # Virtual environments
 .env
 .venv/
+.intervalsicu/
 .uv-cache/
 *.log
 .DS_Store

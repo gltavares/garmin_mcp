@@ -14,4 +14,4 @@ Before recommending sessions, taper, shoes, or fueling, read:
 
 When the athlete shares a workout or race, follow the playbook output shape (bottle setup, chronological table, totals vs targets). Do not invent products outside that inventory.
 
-Do not store Garmin passwords or OAuth tokens in the repo. Use saved tokens via `garmin-mcp-auth --verify` or `~/.garminconnect`.
+Do not store Garmin passwords, Garmin OAuth tokens, or Intervals.icu API keys in the repo. Garmin: `garmin-mcp-auth --verify` / `~/.garminconnect`. Intervals.icu: `intervals-icu-auth --verify` / `~/.intervalsicu` (athlete `i172982`).
