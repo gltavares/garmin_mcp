@@ -1,0 +1,17 @@
+---
+description: Load Gabriel's triathlon / Garmin training memory before advising on sessions
+alwaysApply: true
+---
+
+# Athlete memory
+
+Before recommending sessions, taper, shoes, or fueling, read:
+
+- `memory/athlete-context.md` — race, schedule, shoes, session history
+- `memory/nutrition-playbook.md` — mandatory fueling/hydration rules and product inventory
+- `memory/race-floripa-2026.md` — locked 5:20 race-day nutrition + shoe plan for 18 Oct 2026
+- `memory/race-floripa-2026-result.md` — 5:45:44 result vs plan and the June–September cycle
+
+When the athlete shares a workout or race, follow the playbook output shape (bottle setup, chronological table, totals vs targets). Do not invent products outside that inventory.
+
+Do not store Garmin passwords or OAuth tokens in the repo. Use saved tokens via `garmin-mcp-auth --verify` or `~/.garminconnect`.
