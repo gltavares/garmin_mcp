@@ -1,7 +1,7 @@
 # Athlete context (Gabriel)
 
-Last updated: 2026-10-18. Source: Garmin Connect + conversation + UNPACE live result.  
-Do **not** store Garmin passwords or OAuth tokens in this repo. Tokens live in `~/.garminconnect` on the machine that ran `garmin-mcp-auth`.
+Last updated: 2026-10-18. Source: Garmin Connect + Intervals.icu API + conversation + UNPACE live result.  
+Do **not** store Garmin passwords, Garmin OAuth tokens, or Intervals.icu API keys in this repo. Garmin tokens live in `~/.garminconnect`. The Intervals key lives in `~/.intervalsicu` after `intervals-icu-auth` (verified as **gltavares** / `i172982`).
 
 Fueling rules live in `memory/nutrition-playbook.md`. Use that playbook for every session/race fueling plan.  
 Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa-2026.md`.
@@ -20,12 +20,22 @@ Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa
 
 ## Goal race
 
+Floripa 70.3 is done (18 Oct 2026, 5:45:44). Full debrief: `memory/race-floripa-2026-result.md`.
+
+### Horizon (set 2026-10-18)
+
+- **No A-race.** Next 70.3 is Nov 2027 or Jan 2028. Cut long hours. **One session a day.**
+- **Swim is priority 1.** Target **3 pool sessions/week** on locked slots. BH has no beach — do not chase open water until travel. One of the three must be continuous (unbroken 1,500–2,000 m), not only broken sets. That was the Floripa leak (58:33), not 25 m speed.
+- **Run is priority 2** because it is cheap in hours, not because a race is booked. A local 21k around June 2027 is **optional** — enter it if freshness is there, do not build a peak toward it. Keep one quality + one longo; no race-specific block.
+- **Bike is maintenance only until the next 70.3 block.** One turbo 45–60 min every 7–10 days. Do not program outdoor 90s or 2–3 h longos while the hour budget is tight. FTP rebuilds in ~12–16 weeks.
+- Next 70.3 window: **Nov 2027 or Jan 2028**, **Buenos Aires or Pucón**. Do not pick yet. BA is flatter / run-friendly. Pucón is hilly — bike becomes the second limiter again ~16 weeks out if that is the choice.
+- Do not repeat **July 2026** (two bikes, two runs, zero swims).
+
+### Last A-race (completed)
+
 - **IRONMAN 70.3 Florianópolis** — Sunday **2026-10-18**
 - Distance on Garmin calendar: 113 km
 - Location: Florianópolis, BR
-- Travel: **Friday 2026-10-16** to the race
-- Race-site swim: **Saturday 2026-10-17**, short sea swim, wetsuit, sighting, no effort
-- Race week (2026-10-12 → 17): reduced training load
 
 ## Locked swim slots
 
@@ -133,3 +143,14 @@ Also active on Garmin (not shoes): bikes Caloi Elite, BMC SL03 “Lemon Pepper�
 Tokens are already saved for this environment after `garmin-mcp-auth`. Re-verify with `garmin-mcp-auth --verify`. Never commit `~/.garminconnect` or credentials.
 
 Useful Garmin MCP reads: `get_calendar_events`, `get_scheduled_workouts`, `get_training_readiness`, `get_recovery_time_remaining`, `get_training_status`, `get_activities`, `get_activity`, `get_activity_splits`, `get_hrv_data`, `get_sleep_data`.
+
+### Intervals.icu
+
+- Account: **gltavares** / athlete id **`i172982`** (from 2023 signup mail). Path id **`0`** also works once a key is present.
+- Personal API (forum topic 609): HTTP Basic username literally **`API_KEY`**, password = key from https://intervals.icu/settings → Developer Settings. Browser User-Agent required (Cloudflare).
+- Local key file: `~/.intervalsicu/api_key` via `intervals-icu-auth` / `intervals-icu-auth --verify`. Env: `INTERVALS_ICU_API_KEY`.
+- Tools: `get_intervals_status`, `get_intervals_athlete`, `get_intervals_activities`, `get_intervals_activity`, `get_intervals_wellness`, `get_intervals_events`, `get_intervals_sport_settings`.
+- Strava-sourced fields are not available through this API. Garmin data via Intervals may be restricted after the Oct 2026 T&C note.
+- Intervals API live: athlete **gltavares** / `i172982`. Cycle 1 Jun–18 Oct now **115** activities after deleting 27 MyWhoosh Garmin doubles. Sport FTP setting **235 W**; 10 Oct mail still showed estimated **207 W**.
+- Race-day wellness after the race: CTL **64** / ATL **93**. Pre-race Sat 17 Oct: CTL **56.7** / ATL **52.2** / TSB **+4.5**. Working FTP **207 W**; setting 235 W is high. Cycle-vs-race: [Floripa 70.3 vs cycle](https://cursor.com/canvas/store-d5a35d68-f64c-43c8-b1c4-d15d1356e9c5/d5b0ab3f-7ae5-4693-b829-afcac21124c3).
+- Leftover MyWhoosh (only Intervals copy that day — not deleted): 2 Aug, 15 Aug, 19 Aug, 30 Sep, 2 Oct, 14 Oct. Details in `memory/race-floripa-2026-result.md`.

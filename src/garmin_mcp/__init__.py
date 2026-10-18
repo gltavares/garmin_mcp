@@ -31,6 +31,7 @@ from garmin_mcp import workout_builders
 from garmin_mcp import courses
 from garmin_mcp import activity_analysis
 from garmin_mcp import calendar_events
+from garmin_mcp import intervals
 
 
 def is_interactive_terminal() -> bool:
@@ -629,6 +630,7 @@ def main():
     app = courses.register_tools(app)
     app = activity_analysis.register_tools(app)
     app = calendar_events.register_tools(app)
+    app = intervals.register_tools(app)
 
     # Register resources (workout templates)
     app = workout_templates.register_resources(app)

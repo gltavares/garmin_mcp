@@ -21,6 +21,7 @@ dependencies = [
 [project.scripts]
 garmin-mcp = "garmin_mcp:main"
 garmin-mcp-auth = "garmin_mcp.auth_cli:main"
+intervals-icu-auth = "garmin_mcp.intervals_auth:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/garmin_mcp"]
