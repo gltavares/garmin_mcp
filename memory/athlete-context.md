@@ -142,5 +142,5 @@ Useful Garmin MCP reads: `get_calendar_events`, `get_scheduled_workouts`, `get_t
 - Tools: `get_intervals_status`, `get_intervals_athlete`, `get_intervals_activities`, `get_intervals_activity`, `get_intervals_wellness`, `get_intervals_events`, `get_intervals_sport_settings`.
 - Strava-sourced fields are not available through this API. Garmin data via Intervals may be restricted after the Oct 2026 T&C note.
 - Intervals API live: athlete **gltavares** / `i172982`. Cycle 1 Jun–18 Oct now **115** activities after deleting 27 MyWhoosh Garmin doubles. Sport FTP setting **235 W**; 10 Oct mail still showed estimated **207 W**.
-- Race-day wellness: CTL **78** / ATL **97**.
+- Race-day wellness after the race: CTL **64** / ATL **93**. Pre-race Sat 17 Oct: CTL **56.7** / ATL **52.2** / TSB **+4.5**. Working FTP **207 W**; setting 235 W is high. Cycle-vs-race: [Floripa 70.3 vs cycle](https://cursor.com/canvas/store-d5a35d68-f64c-43c8-b1c4-d15d1356e9c5/d5b0ab3f-7ae5-4693-b829-afcac21124c3).
 - Leftover MyWhoosh (only Intervals copy that day — not deleted): 2 Aug, 15 Aug, 19 Aug, 30 Sep, 2 Oct, 14 Oct. Details in `memory/race-floripa-2026-result.md`.

@@ -2,7 +2,8 @@
 
 Last updated: 2026-10-18.  
 Splits: unofficial live tracker (UNPACE), 1390 finishers / 1503 starters. Official IRONMAN sheet may move seconds.  
-Cycle volume: TEO Esportes monthly emails (completed sessions only).
+Fitness: Intervals.icu athlete `i172982` (CTL/ATL, race legs, power). Volume: TEO emails + Garmin.  
+Full chart debrief: [Floripa 70.3 vs cycle](https://cursor.com/canvas/store-d5a35d68-f64c-43c8-b1c4-d15d1356e9c5/d5b0ab3f-7ae5-4693-b829-afcac21124c3).
 
 ## Race
 
@@ -26,6 +27,10 @@ Run 21.1 km in 1:50:59 = **5:15 /km**.
 
 A 38:00 swim with the same bike/run/T is **5:25:11**.
 
+Garmin multi-sport `24769770191` started **06:08:11**. Intervals legs: swim `i198702465` 1,963 m · 58:11 file · HR 105; bike `i198702467` 90.1 km · 2:49:15 elapsed · 171 W / **NP 187** · +531 m · HR 142 · decoupling **2.1%**; run `i198702476` 21.1 km · 1:50:47 · 5:15/km · HR 141. T1 file 5:35, T2 2:06.
+
+Working FTP is the **207 W** eFTP from 10 Oct Confins (NP 207). Sport setting **235 W** is high. Race IF is **0.90 vs 207**, 0.80 vs 235. Race NP matched the 4 Oct brick (79 km @ NP 187).
+
 ## Cycle volume (TEO completed)
 
 Emails on the 1st cover the previous calendar month.
@@ -40,7 +45,15 @@ Emails on the 1st cover the previous calendar month.
 
 June–September totals: bike **1,266 km / 39**, run **281 km / 31**, swim **36.6 km / 18**.
 
-Key sessions: Oct 4 brick 78.8 km @ 34.1 km/h + 14 km @ 5:18. Oct 10 Confins 55 km, Intervals FTP **207 W**. Sep 28 pool 3 km in 41:44. Wetsuit OW only Sat 17 splash.
+Key sessions: Oct 4 brick 78.8 km @ 34.1 km/h + 14 km @ 5:18, NP 187. Oct 10 Confins 55 km, eFTP **207 W**. Sep 28 pool 2.5 km in 41:44. Wetsuit OW only Sat 17 splash (444 m).
+
+### Intervals fitness (pre-race)
+
+July wiped CTL **32 → 14**. Rebuild Aug–Oct to **57** (17 Oct). Form stayed negative until travel. First +TSB of the block after July: **Sat 17 Oct +4.5** (CTL 56.7 / ATL 52.2). That is a 48-hour freshen, not a 7–10 day taper. 16 Oct sleep **4 h 01**. Race-week loads still 78–82 on 13–14 Oct. Race day added **358** TSS; CTL/ATL after: 63.8 / 92.9.
+
+Weekly TSS (Mon, race removed from last week): Jun 394 / 604 / 315, then four empty weeks, Jul 16 / 163, Aug 332 / 225 / 321 / 415 / 537, Sep 567 / 578 / 534 / 472, Oct 513 / **212**.
+
+Outdoor bikes: **4** (42 + 79 + 55 + race). Indoor: **47**. Swim sessions: **23** (21 pool + 2 OW). Sep swims: **5**.
 
 Garmin Jun–Oct 18 (106 sessions) matches TEO months. Outdoor bikes only **3** plus race (Aug 22 Confins 42 km, Oct 4 78.8 km, Oct 10 55 km). **42** virtual rides. Sep 12 Kanuma 32.7 km / Ukyo 33.7 km are two different indoor rides — keep both.
 
