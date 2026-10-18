@@ -90,7 +90,8 @@ Deleted (examples): 30 Aug Transição, 19 Sep Floripa, 20 Sep Longo, 23 Sep Lim
 
 ## Next cycle (in order)
 
-1. One continuous 1,500–1,900 m wetsuit TT every 2 weeks. Sighting. Seed the real swim time, not 36–40.
-2. Two quality swims/week, not one. Do not skip July-shaped months.
-3. One outdoor 90 km with climbing before the next hilly 70.3.
-4. Keep the brick + off-bike 14–18 km pattern. That is why the run worked.
+Hour budget is tight until the next 70.3 (Nov 2027 / Jan 2028, BA or Pucón). One session a day. BH has no beach.
+
+1. **Swim, 3×/week, pool.** One session continuous 1,500–2,000 m. Two can stay quality/drill. Open-water / wetsuit TT waits for travel. Do not skip July-shaped months.
+2. **Run, not bike.** Serve a fast standalone 21k around June 2027 and the local run calendar. Keep one longo + one quality; drop bricks until a 70.3 is 16 weeks out.
+3. **Bike = one turbo 45–60 min / 7–10 days.** Rebuild outdoor 90 + climbing only after the June 21k, or immediately if the 70.3 pick is Pucón.

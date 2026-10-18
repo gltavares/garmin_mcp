@@ -20,12 +20,22 @@ Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa
 
 ## Goal race
 
+Floripa 70.3 is done (18 Oct 2026, 5:45:44). Full debrief: `memory/race-floripa-2026-result.md`.
+
+### Horizon (set 2026-10-18)
+
+- **No A-race until mid-2027.** Cut long hours. **One session a day.**
+- **Swim is priority 1.** Target **3 pool sessions/week** on locked slots. BH has no beach — do not chase open water until travel. One of the three must be continuous (unbroken 1,500–2,000 m), not only broken sets. That was the Floripa leak (58:33), not 25 m speed.
+- **Run is priority 2.** Local calendar has more run races than bike. Candidate: **fast standalone 21k around June 2027**. Off-bike Floripa was 1:50:59 at 5:15/km, HR 141 — standalone has headroom without becoming a high-volume project.
+- **Bike is maintenance only until the next 70.3 block.** One turbo 45–60 min every 7–10 days. Do not program outdoor 90s or 2–3 h longos while the hour budget is tight. FTP rebuilds in ~12–16 weeks; the next 70.3 is 13–15 months out.
+- Next 70.3 window: **Nov 2027 or Jan 2028**, **Buenos Aires or Pucón**. Do not pick yet. BA is flatter / run-friendly. Pucón is hilly — bike becomes the second limiter again ~16 weeks out if that is the choice.
+- Do not repeat **July 2026** (two bikes, two runs, zero swims).
+
+### Last A-race (completed)
+
 - **IRONMAN 70.3 Florianópolis** — Sunday **2026-10-18**
 - Distance on Garmin calendar: 113 km
 - Location: Florianópolis, BR
-- Travel: **Friday 2026-10-16** to the race
-- Race-site swim: **Saturday 2026-10-17**, short sea swim, wetsuit, sighting, no effort
-- Race week (2026-10-12 → 17): reduced training load
 
 ## Locked swim slots
 
