@@ -94,4 +94,4 @@ Hour budget is tight until the next 70.3 (Nov 2027 / Jan 2028, BA or Pucón). On
 
 1. **Swim, 3×/week, pool.** One session continuous 1,500–2,000 m. Two can stay quality/drill. Open-water / wetsuit TT waits for travel. Do not skip July-shaped months.
 2. **Run, not bike.** Cheap in hours; local races are optional (a June 2027 21k is not a target). Keep one longo + one quality; no peak. Drop bricks until a 70.3 is 16 weeks out.
-3. **Bike = one turbo 45–60 min / 7–10 days.** Rebuild outdoor 90 + climbing only after the June 21k, or immediately if the 70.3 pick is Pucón.
+3. **Bike = one turbo 45–60 min / 7–10 days.** Rebuild outdoor 90 + climbing when the 70.3 block starts (~16 weeks out), sooner if the pick is Pucón.
