@@ -81,6 +81,22 @@ def test_client_sets_basic_auth_and_browser_ua():
     assert client.session.headers["User-Agent"] == BROWSER_UA
 
 
+def test_client_delete_activity():
+    session = Mock()
+    response = Mock()
+    response.status_code = 200
+    response.ok = True
+    response.content = b'{"id":"i191001713"}'
+    response.json.return_value = {"id": "i191001713"}
+    session.request.return_value = response
+
+    client = IntervalsClient("k", session=session)
+    assert client.delete_activity("i191001713") == {"id": "i191001713"}
+    args, kwargs = session.request.call_args
+    assert args[0] == "DELETE"
+    assert args[1] == "https://intervals.icu/api/v1/activity/i191001713"
+
+
 def test_client_get_sends_date_params():
     session = Mock()
     response = Mock()
@@ -88,15 +104,16 @@ def test_client_get_sends_date_params():
     response.ok = True
     response.content = b'[{"id":"i1"}]'
     response.json.return_value = [{"id": "i1"}]
-    session.get.return_value = response
+    session.request.return_value = response
 
     client = IntervalsClient("k", athlete_id="i172982", session=session)
     payload = client.activities("2026-06-01", "2026-10-18")
 
     assert payload == [{"id": "i1"}]
-    session.get.assert_called_once()
-    args, kwargs = session.get.call_args
-    assert args[0] == "https://intervals.icu/api/v1/athlete/i172982/activities"
+    session.request.assert_called_once()
+    args, kwargs = session.request.call_args
+    assert args[0] == "GET"
+    assert args[1] == "https://intervals.icu/api/v1/athlete/i172982/activities"
     assert kwargs["params"] == {"oldest": "2026-06-01", "newest": "2026-10-18"}
 
 
@@ -105,7 +122,7 @@ def test_client_401_is_auth_error():
     response = Mock()
     response.status_code = 401
     response.ok = False
-    session.get.return_value = response
+    session.request.return_value = response
     client = IntervalsClient("bad", session=session)
     with pytest.raises(IntervalsAuthError, match="401"):
         client.athlete()
@@ -123,11 +140,11 @@ def test_client_falls_back_from_profile_404():
     found.ok = True
     found.content = b'{"id":"i172982"}'
     found.json.return_value = {"id": "i172982"}
-    session.get.side_effect = [missing, found]
+    session.request.side_effect = [missing, found]
 
     client = IntervalsClient("k", session=session)
     assert client.athlete() == {"id": "i172982"}
-    assert session.get.call_count == 2
+    assert session.request.call_count == 2
 
 
 def test_get_client_requires_key(key_home):

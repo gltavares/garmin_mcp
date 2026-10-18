@@ -142,3 +142,4 @@ Useful Garmin MCP reads: `get_calendar_events`, `get_scheduled_workouts`, `get_t
 - Tools: `get_intervals_status`, `get_intervals_athlete`, `get_intervals_activities`, `get_intervals_activity`, `get_intervals_wellness`, `get_intervals_events`, `get_intervals_sport_settings`.
 - Strava-sourced fields are not available through this API. Garmin data via Intervals may be restricted after the Oct 2026 T&C note.
 - Confirmed from Intervals mail (no API yet): FTP **207 W** after Confins 55 km (10 Oct 2026).
+- Cycle activity check (Garmin 2026-06-01 → 10-18, 106 sessions) and Intervals MyWhoosh duplicate IDs: `memory/race-floripa-2026-result.md`.

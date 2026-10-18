@@ -107,3 +107,12 @@ async def test_wellness_and_events(app_with_intervals):
     assert events[0]["name"] == "Limiar"
     assert sports[0]["icu_ftp"] == 207
     assert athlete["id"] == "i172982"
+
+
+@pytest.mark.asyncio
+async def test_delete_requires_confirm(app_with_intervals):
+    result = await app_with_intervals.call_tool(
+        "delete_intervals_activity", {"activity_id": "i191001713"}
+    )
+    data = _payload(result)
+    assert data["status"] == "needs_confirm"

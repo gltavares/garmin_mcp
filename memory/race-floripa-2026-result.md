@@ -42,6 +42,21 @@ June–September totals: bike **1,266 km / 39**, run **281 km / 31**, swim **36.
 
 Key sessions: Oct 4 brick 78.8 km @ 34.1 km/h + 14 km @ 5:18. Oct 10 Confins 55 km, Intervals FTP **207 W**. Sep 28 pool 3 km in 41:44. Wetsuit OW only Sat 17 splash.
 
+Garmin Jun–Oct 18 (106 sessions) matches TEO months. Outdoor bikes only **3** plus race (Aug 22 Confins 42 km, Oct 4 78.8 km, Oct 10 55 km). **42** virtual rides. Sep 12 Kanuma 32.7 km / Ukyo 33.7 km are two different indoor rides — keep both.
+
+### Intervals MyWhoosh doubles (same start, time, km)
+
+MyWhoosh is a second Intervals upload of the Garmin virtual ride. Not on Garmin. Delete the MyWhoosh copy; keep the Garmin-named one. Blocked here until `intervals-icu-auth` has a key (`DELETE /api/v1/activity/{id}`).
+
+| Date | Delete MyWhoosh | Keep |
+|---|---|---|
+| 2026-08-30 10:35 · 1:30 · 43 km | [i181390071](https://intervals.icu/activities/i181390071) Transição | [i181428188](https://intervals.icu/activities/i181428188) Virtual Cycling |
+| 2026-09-19 11:32 · 2:00 · 61 km | [i188285181](https://intervals.icu/activities/i188285181) Transição - Floripa | [i188301934](https://intervals.icu/activities/i188301934) Adliswil |
+| 2026-09-23 07:47 · 1:08 · 37 km | [i189532508](https://intervals.icu/activities/i189532508) Limiar | [i189777411](https://intervals.icu/activities/i189777411) Al Ain |
+| 2026-09-27 16:21 · 2:00 · 63 km | [i191001713](https://intervals.icu/activities/i191001713) Transição | [i191017512](https://intervals.icu/activities/i191017512) Mahdha |
+
+Sep 20 MyWhoosh Longo [i188602801](https://intervals.icu/activities/i188602801) (2:30 / 66 km) has **no** second Intervals mail. Garmin that day is Abu Dhabi Virtual Cycling. Do not delete until a pair is confirmed.
+
 ## What was missed
 
 1. **Open-water race swimming.** Last in M25–29 at 58:33 / 3:05 per 100. 2023 was already 56:09. Pool speed exists; continuous OW does not.

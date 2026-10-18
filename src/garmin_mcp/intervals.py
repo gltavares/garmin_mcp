@@ -157,10 +157,15 @@ class IntervalsClient:
     def _athlete_path(self, suffix: str = "") -> str:
         return f"/athlete/{self.athlete_id}{suffix}"
 
-    def _get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Any:
+    def _request(
+        self,
+        method: str,
+        path: str,
+        params: Optional[Dict[str, Any]] = None,
+    ) -> Any:
         try:
-            response = self.session.get(
-                self._url(path), params=params, timeout=30
+            response = self.session.request(
+                method, self._url(path), params=params, timeout=30
             )
         except requests.RequestException as exc:
             raise IntervalsAPIError(f"Intervals.icu request failed: {exc}") from exc
@@ -190,6 +195,9 @@ class IntervalsClient:
             return response.json()
         except ValueError as exc:
             raise IntervalsAPIError("Intervals.icu returned non-JSON") from exc
+
+    def _get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Any:
+        return self._request("GET", path, params=params)
 
     def athlete(self) -> Any:
         """Profile for the key's athlete. Prefer ``/profile``, fall back to ``/athlete/{id}``."""
@@ -224,6 +232,12 @@ class IntervalsClient:
             self._athlete_path("/events"),
             params={"oldest": oldest, "newest": newest},
         )
+
+    def delete_activity(self, activity_id: str) -> Any:
+        aid = (activity_id or "").strip()
+        if not aid:
+            raise ValueError("activity_id is required")
+        return self._request("DELETE", f"/activity/{aid}")
 
 
 def get_client() -> IntervalsClient:
@@ -386,5 +400,28 @@ def register_tools(app):
             return _needs_setup()
         except Exception as exc:
             return f"Error retrieving Intervals.icu events: {exc}"
+
+    @app.tool()
+    async def delete_intervals_activity(
+        activity_id: str,
+        confirm: bool = False,
+    ) -> str:
+        """Delete one Intervals.icu activity. Requires confirm=true. Irreversible."""
+        try:
+            if not confirm:
+                return json.dumps(
+                    {
+                        "status": "needs_confirm",
+                        "activity_id": activity_id,
+                        "how": "Call again with confirm=true to delete.",
+                    },
+                    indent=2,
+                )
+            deleted = get_client().delete_activity(activity_id)
+            return _dump({"status": "deleted", "activity": deleted})
+        except IntervalsAuthError:
+            return _needs_setup()
+        except Exception as exc:
+            return f"Error deleting Intervals.icu activity: {exc}"
 
     return app
