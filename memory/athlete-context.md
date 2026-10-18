@@ -1,7 +1,7 @@
 # Athlete context (Gabriel)
 
-Last updated: 2026-10-18. Source: Garmin Connect + Intervals.icu account + conversation + UNPACE live result.  
-Do **not** store Garmin passwords, Garmin OAuth tokens, or Intervals.icu API keys in this repo. Garmin tokens live in `~/.garminconnect`. The Intervals key lives in `~/.intervalsicu` after `intervals-icu-auth`.
+Last updated: 2026-10-18. Source: Garmin Connect + Intervals.icu API + conversation + UNPACE live result.  
+Do **not** store Garmin passwords, Garmin OAuth tokens, or Intervals.icu API keys in this repo. Garmin tokens live in `~/.garminconnect`. The Intervals key lives in `~/.intervalsicu` after `intervals-icu-auth` (verified as **gltavares** / `i172982`).
 
 Fueling rules live in `memory/nutrition-playbook.md`. Use that playbook for every session/race fueling plan.  
 Race-day 70.3 Floripa plan (nutrition + shoes, 5:20 clock): `memory/race-floripa-2026.md`.
@@ -141,5 +141,6 @@ Useful Garmin MCP reads: `get_calendar_events`, `get_scheduled_workouts`, `get_t
 - Local key file: `~/.intervalsicu/api_key` via `intervals-icu-auth` / `intervals-icu-auth --verify`. Env: `INTERVALS_ICU_API_KEY`.
 - Tools: `get_intervals_status`, `get_intervals_athlete`, `get_intervals_activities`, `get_intervals_activity`, `get_intervals_wellness`, `get_intervals_events`, `get_intervals_sport_settings`.
 - Strava-sourced fields are not available through this API. Garmin data via Intervals may be restricted after the Oct 2026 T&C note.
-- Confirmed from Intervals mail (no API yet): FTP **207 W** after Confins 55 km (10 Oct 2026).
-- Cycle activity check (Garmin 2026-06-01 → 10-18, 106 sessions) and Intervals MyWhoosh duplicate IDs: `memory/race-floripa-2026-result.md`.
+- Intervals API live: athlete **gltavares** / `i172982`. Cycle 1 Jun–18 Oct now **115** activities after deleting 27 MyWhoosh Garmin doubles. Sport FTP setting **235 W**; 10 Oct mail still showed estimated **207 W**.
+- Race-day wellness: CTL **78** / ATL **97**.
+- Leftover MyWhoosh (only Intervals copy that day — not deleted): 2 Aug, 15 Aug, 19 Aug, 30 Sep, 2 Oct, 14 Oct. Details in `memory/race-floripa-2026-result.md`.
