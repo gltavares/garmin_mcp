@@ -443,6 +443,12 @@ def init_api(email, password):
         finally:
             sys.stderr = old_stderr
 
+        # A store written by garminconnect <= 0.3.4 stays world-readable until
+        # the next dump. Tighten it whenever a token login succeeds.
+        token_utils.secure_token_dir(tokenstore)
+        if os.path.exists(tokenstore_base64):
+            os.chmod(tokenstore_base64, 0o600)
+
     except (FileNotFoundError, GarminConnectConnectionError, GarminConnectTooManyRequestsError, GarminConnectAuthenticationError):
         # Session is expired. You'll need to log in again
 

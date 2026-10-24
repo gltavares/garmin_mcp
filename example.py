@@ -225,11 +225,20 @@ def init_api(email, password):
                 garmin.resume_login(result2, mfa_code)
             # Save Oauth1 and Oauth2 token files to directory for next login
             garmin.client.dump(tokenstore)
+            # Owner-only, including stores this script wrote before garminconnect 0.3.5.
+            expanded_tokenstore = os.path.expanduser(tokenstore)
+            if os.path.isdir(expanded_tokenstore):
+                os.chmod(expanded_tokenstore, 0o700)
+                for name in os.listdir(expanded_tokenstore):
+                    entry = os.path.join(expanded_tokenstore, name)
+                    if os.path.isfile(entry):
+                        os.chmod(entry, 0o600)
+            elif os.path.isfile(expanded_tokenstore):
+                os.chmod(expanded_tokenstore, 0o600)
             print(
                 f"Oauth tokens stored in '{tokenstore}' directory for future use. (first method)\n"
             )
             # Encode Oauth1 and Oauth2 tokens to base64 string and save to file for next login (alternative way)
-            expanded_tokenstore = os.path.expanduser(tokenstore)
             token_json_path = os.path.join(expanded_tokenstore, "garmin_tokens.json")
             with open(token_json_path, "r") as f:
                 token_data = f.read()
@@ -237,6 +246,7 @@ def init_api(email, password):
             dir_path = os.path.expanduser(tokenstore_base64)
             with open(dir_path, "w") as token_file:
                 token_file.write(token_base64)
+            os.chmod(dir_path, 0o600)
             print(
                 f"Oauth tokens encoded as base64 string and saved to '{dir_path}' file for future use. (second method)\n"
             )

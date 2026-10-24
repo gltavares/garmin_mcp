@@ -126,6 +126,28 @@ class TestAuthenticate:
         mock_exists.assert_called_once()
         mock_validate.assert_called_once()
 
+    @patch("garmin_mcp.auth_cli.token_exists", return_value=True)
+    @patch("garmin_mcp.auth_cli.validate_tokens", return_value=(True, ""))
+    def test_existing_valid_tokens_are_restricted_to_owner(self, _mock_validate, _mock_exists):
+        """A store left world-readable by garminconnect <= 0.3.4 is tightened in place."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            token_file = os.path.join(tmpdir, "garmin_tokens.json")
+            with open(token_file, "w") as handle:
+                handle.write("{}")
+            os.chmod(tmpdir, 0o755)
+            os.chmod(token_file, 0o644)
+            base64_path = os.path.join(tmpdir, "tokens.b64")
+            with open(base64_path, "w") as handle:
+                handle.write("abc")
+            os.chmod(base64_path, 0o644)
+
+            result = authenticate(tmpdir, base64_path, force_reauth=False)
+
+            assert result is True
+            assert oct(os.stat(tmpdir).st_mode)[-3:] == "700"
+            assert oct(os.stat(token_file).st_mode)[-3:] == "600"
+            assert oct(os.stat(base64_path).st_mode)[-3:] == "600"
+
     @patch("garmin_mcp.auth_cli.token_exists")
     @patch("garmin_mcp.auth_cli.validate_tokens")
     @patch("garmin_mcp.auth_cli.get_credentials")

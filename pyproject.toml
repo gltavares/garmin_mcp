@@ -7,14 +7,17 @@ name = "garmin-mcp"
 version = "0.1.0"
 description = "MCP server to access Garmin data"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
     "python-dotenv==1.2.2",
-    "garminconnect==0.3.2",
+    # 0.3.5 writes the OAuth token store as 0600/0700 (GHSA-wjhr-76vg-2hvc).
+    # That release also requires Python >=3.12.
+    "garminconnect>=0.3.5",
     "requests==2.33.0",
     # mcp 2.x renamed mcp.server.fastmcp -> mcp.server.mcpserver (FastMCP ->
     # MCPServer). Cap until the server is ported to the new API.
-    "mcp>=1.28.1,<2",
+    # 1.30.0 fixes unbounded Streamable HTTP session growth (GHSA-84m7-p3x7-pcfv).
+    "mcp>=1.30.0,<2",
     "fitparse>=1.2.0",
 ]
 
@@ -26,6 +29,16 @@ garmin-mcp-auth = "garmin_mcp.auth_cli:main"
 packages = ["src/garmin_mcp"]
 
 [tool.uv]
+# Floors for transitive advisories. Direct deps only require older releases,
+# so without these the lock can keep vulnerable pyjwt, urllib3, anyio, h11,
+# and certifi.
+constraint-dependencies = [
+    "anyio>=4.14.2",
+    "certifi>=2026.10.19",
+    "h11>=0.16.0",
+    "pyjwt>=2.15.0",
+    "urllib3>=2.8.0",
+]
 dev-dependencies = [
     "pytest>=9.0.2",
     "pytest-asyncio>=0.25.2",
