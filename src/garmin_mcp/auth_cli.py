@@ -141,6 +141,11 @@ def authenticate(token_path: str, token_base64_path: str, force_reauth: bool = F
         if is_valid:
             print("✓ Existing tokens are valid. Authentication not needed.")
             print(f"  Use --force-reauth to generate new tokens.")
+            # Upgrade does not rewrite an existing store. A file left at 0644
+            # by garminconnect <= 0.3.4 stays readable until something chmods it.
+            _secure_token_dir(token_path)
+            if os.path.exists(token_base64_path):
+                os.chmod(token_base64_path, 0o600)
             return True
         else:
             print(f"✗ Existing tokens are invalid: {error_msg}")

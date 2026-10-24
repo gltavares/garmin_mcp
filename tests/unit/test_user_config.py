@@ -1,5 +1,6 @@
 """Tests for Desktop Extension user-config handling."""
 
+import os
 from unittest.mock import patch
 
 import pytest
@@ -41,3 +42,28 @@ def test_unresolved_credentials_do_not_trigger_login(mock_garmin, _mock_terminal
     assert result is None
     mock_garmin.assert_called_once_with(is_cn=False)
     mock_garmin.return_value.login.assert_called_once_with(tokenstore)
+
+
+@patch("garmin_mcp.Garmin")
+def test_successful_token_login_restricts_existing_store(mock_garmin, monkeypatch, tmp_path):
+    """Loading tokens also chmods a pre-existing world-readable store."""
+    token_dir = tmp_path / "tokens"
+    token_dir.mkdir()
+    token_file = token_dir / "garmin_tokens.json"
+    token_file.write_text("{}")
+    token_dir.chmod(0o755)
+    token_file.chmod(0o644)
+    base64_path = tmp_path / "tokens.b64"
+    base64_path.write_text("abc")
+    base64_path.chmod(0o644)
+    monkeypatch.setattr("garmin_mcp.tokenstore", str(token_dir))
+    monkeypatch.setattr("garmin_mcp.tokenstore_base64", str(base64_path))
+    mock_garmin.return_value.login.return_value = None
+
+    result = init_api(None, None)
+
+    assert result is mock_garmin.return_value
+    assert oct(token_dir.stat().st_mode)[-3:] == "700"
+    assert oct(token_file.stat().st_mode)[-3:] == "600"
+    assert oct(base64_path.stat().st_mode)[-3:] == "600"
+    assert os.path.exists(base64_path)
